@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BAFBED"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/messages"
+        android:layout_width="269dp"
+        android:layout_height="43dp"
+        android:fontFamily="casual"
+        android:text="         Hello!"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <EditText
+        android:id="@+id/etPetName"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="  rename pet"
+        android:inputType="textPersonName"
+        android:text=""
+        android:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/petImg"
+        android:layout_width="203dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars[12]" />
+
+    <ImageButton
+        android:id="@+id/playBtn"
+        android:layout_width="104dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/feedBtn"
+        app:layout_constraintTop_toBottomOf="@+id/petImg"
+        tools:srcCompat="@tools:sample/avatars[14]" />
+
+    <ProgressBar
+        android:id="@+id/pbarHealth"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="214dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/feedBtn"
+        android:layout_width="105dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/sleepBtn"
+        app:layout_constraintTop_toBottomOf="@+id/petImg"
+        tools:srcCompat="@tools:sample/avatars[4]" />
+
+    <ImageButton
+        android:id="@+id/sleepBtn"
+        android:layout_width="105dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petImg"
+        tools:srcCompat="@tools:sample/avatars[13]" />
+
+    <TextView
+        android:id="@+id/petNewName"
+        android:layout_width="112dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="casual"
+        android:text="    Pasta"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvhealth"
+        android:layout_width="145dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="28dp"
+        android:fontFamily="casual"
+        android:text="   Hunger"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/pbarHealth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/sendName"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="24dp"
+        android:background="#E7BEF8"
+        android:fontFamily="casual"
+        android:text="Name"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPetName" />
+
+    <ProgressBar
+        android:id="@+id/fatiguepb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="216dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbarHealth" />
+
+    <TextView
+        android:id="@+id/fatiguetv"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="casual"
+        android:text="   Fatigue"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/fatiguepb"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="408dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:background="#E7BEF8"
+        android:fontFamily="casual"
+        android:text="Revive pet"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleepBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

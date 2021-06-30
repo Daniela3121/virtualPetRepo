@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6FCCD"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:background="#EBD0F9"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="CHOOSE!!"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="140dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="#9ADED6"-->
+<!--        android:text="RESET"-->
+<!--        android:textColor="#540F7E"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/result"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/result" />-->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#DBDFDA"
+        android:text="WIN TO BRING YOUR PET BACK TO LIFE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/userChoice"
+        android:layout_width="175dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="216dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/player_1" />
+
+    <ImageView
+        android:id="@+id/imagePaper"
+        android:layout_width="175dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/player_2" />
+
+    <Button
+        android:id="@+id/rockz"
+        android:layout_width="114dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="64dp"
+        android:background="#CAE1FC"
+        android:text="rock"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/paper"
+        android:layout_width="114dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="64dp"
+        android:background="#CAE1FC"
+        android:text="paper"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scissors" />
+
+    <Button
+        android:id="@+id/scissors"
+        android:layout_width="114dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="64dp"
+        android:background="#CAE1FC"
+        android:text="scissors"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/userScore"
+        android:layout_width="141dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="544dp"
+        android:background="#EBD0F9"
+        android:text="  won:  "
+        android:textColor="@android:color/background_dark"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/opponentScore"
+        android:layout_width="141dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="544dp"
+        android:layout_marginEnd="8dp"
+        android:background="#EBD0F9"
+        android:text="  Lost: "
+        android:textColor="@android:color/background_dark"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/whoswho"
+        android:layout_width="309dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="60dp"
+        android:background="#A4ADAC"
+        android:text="   YOU                   opponent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
